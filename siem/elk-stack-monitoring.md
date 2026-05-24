@@ -18,4 +18,6 @@ Visual monitoring for SOC operations.
 
 ## Status
 
-Implementedgit add .
+Implemented
+
+ 

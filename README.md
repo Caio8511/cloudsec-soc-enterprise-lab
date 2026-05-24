@@ -1,100 +1,92 @@
 # CloudSec SOC Enterprise Lab
 
-Enterprise SOC + Cloud Security + Detection Engineering laboratory built on AWS.
+Enterprise-level SOC and Cloud Security laboratory focused on:
+
+- AWS Security Monitoring
+- SIEM Integrations
+- Detection Engineering
+- Incident Response
+- DevSecOps Security
+- Cloud Threat Detection
 
 ---
 
-# Project Overview
+# Technologies
 
-This project simulates a real-world SOC environment using AWS native security services.
-
-Technologies used:
-
-- AWS CloudTrail
+- AWS
+- CloudTrail
 - CloudWatch
 - SNS
-- IAM
-- Detection Engineering
-- Security Monitoring
-- Incident Response
-- SIEM concepts
+- Wazuh
+- Splunk
+- ELK Stack
+- GitHub Actions
+- Docker
+- Terraform
 
 ---
 
-# Implemented Detections
+# Project Structure
 
-| Detection | Status |
-|---|---|
-| Console Login Failure | ✅ |
-| IAM User Created | ✅ |
-| Root Account Usage | ✅ |
-| Security Group Change | ✅ |
+- aws/
+- detections/
+- devsecops/
+- incident-response/
+- siem/
+- reports/
+- screenshots/
 
 ---
-# SOC Detection Flow
 
-```text
-IAM Events
-    ↓
-    CloudTrail
-        ↓
-        CloudWatch
-            ↓
-            SNS Alerts
-                ↓
-                SOC Analyst
-                ```
+# Key Features
 
-                ---
+## AWS Monitoring
 
-                # Repository Structure
+- CloudTrail logging
+- CloudWatch alerts
+- SNS notifications
+- IAM hardening
 
-                ```text
-                architecture/
-                aws/
-                detections/
-                devsecops/
-                incident-response/
-                reports/
-                screenshots/
-                scripts/
-                siem/
-                ```
+## Detection Engineering
 
-                ---
+- Brute force detection
+- Root account monitoring
+- IAM abuse detection
 
-                # MITRE ATT&CK Coverage
+## Incident Response
 
-                - T1110 - Brute Force
-                - T1136 - Create Account
-                - T1098 - Account Manipulation
+- Playbooks
+- Containment procedures
+- Recovery steps
+- Lessons learned
 
-                ---
+## DevSecOps
 
-                # AWS Services Used
+- CI/CD security
+- Container scanning
+- IaC security
+- Security pipelines
 
-                - AWS CloudTrail
-                - Amazon CloudWatch
-                - Amazon SNS
-                - IAM Monitoring
-                - Security Event Detection
+## SIEM Integrations
 
-                ---
+- Wazuh
+- Splunk
+- ELK Stack
 
-                # SOC Dashboard
+---
 
-                ![AWS SOC Dashboard](screenshots/aws-soc-dashboard.png)
+# Architecture
 
-                ---
+![Architecture](architecture/aws-soc-architecture.png)
 
-                # Status
+---
 
-                Implemented
+# SOC Dashboard
 
-         # SOC Dashboard
+![SOC Dashboard](screenshots/aws-soc-dashboard.png)
 
-         ![AWS SOC Dashboard](screenshots/aws-soc-dashboard.png)
+---
 
-                # Architecture
+# Status
 
-                ![Architecture](architecture/aws-soc-architecture.png)
+Implemented

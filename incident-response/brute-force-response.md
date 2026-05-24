@@ -36,4 +36,4 @@
 
 - Improve IAM hardening
 - Enable additional monitoring
-- Review alert thresholdsgit add .
+- Review alert thresholdsgit .

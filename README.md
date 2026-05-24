@@ -90,3 +90,16 @@ Enterprise-level SOC and Cloud Security laboratory focused on:
 # Status
 
 Implemented
+
+---
+
+## CloudTrail Authentication Monitoring
+
+Evento capturado com sucesso via AWS CloudTrail:
+
+```json
+{
+  "eventName": "ConsoleLogin",
+    "ConsoleLogin": "Success",
+      "MFAUsed": "Yes"
+      }

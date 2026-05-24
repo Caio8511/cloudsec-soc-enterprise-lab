@@ -1,30 +1,24 @@
 # IAM User Created Detection
 
-## Objective
-Detect creation of new IAM users in AWS environments.
+## Description
+
+Detection for new IAM user creation events in AWS environments.
 
 ---
 
-## Services Used
-- AWS CloudTrail
-- AWS CloudWatch
-- Amazon SNS
+## Event Source
+
+AWS CloudTrail
 
 ---
 
 ## Detection Logic
-This detection identifies when a new IAM user is created inside the AWS account.
 
-The event is captured by CloudTrail and monitored by CloudWatch alarms.
-
----
-
-## Event Name
-CreateUser
+Monitor CreateUser events using CloudWatch Logs filters.
 
 ---
 
-## Filter Example
+## Example Event
 
 ```json
 {
@@ -34,21 +28,27 @@ CreateUser
 
   ---
 
-  ## Alert Action
-  - CloudWatch Alarm
-  - SNS Email Notification
+  ## Response Actions
+
+  - Validate if the user creation was authorized
+  - Review IAM permissions
+  - Investigate suspicious activity
+  - Escalate if malicious
 
   ---
 
   ## Severity
+
   High
 
   ---
 
   ## MITRE ATT&CK
+
   - T1136 - Create Account
 
   ---
 
   ## Status
+
   Implemented

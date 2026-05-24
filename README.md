@@ -1,96 +1,77 @@
 # CloudSec SOC Enterprise Lab
 
-## 📌 Objetivo
-
-Laboratório corporativo de cibersegurança focado em:
-
-- AWS Security
-- SIEM
-- IAM Hardening
-- Incident Response
-- Threat Hunting
-- DevSecOps
-- Vulnerability Management
-- Security Monitoring
+Enterprise SOC + Cloud Security + Detection Engineering laboratory built on AWS.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# Project Overview
 
-### Cloud & Security
-- AWS IAM
+This project simulates a real-world SOC environment using AWS native security services.
+
+Technologies used:
+
 - AWS CloudTrail
-- AWS GuardDuty
-- AWS Security Hub
-- AWS Config
-- Amazon EC2
-
-### SIEM & Monitoring
-- Wazuh
-- ELK Stack
-- Sysmon
-- Sigma Rules
-
-### DevSecOps
-- GitHub Actions
-- SonarQube
-- Trivy
-- OWASP Dependency Check
-
-### Infrastructure & Automation
-- Terraform
-- Python
-- Bash
-
----
-
-## 🔥 Cenários Simulados
-
-- IAM Compromise
-- Privilege Escalation
-- Brute Force Detection
-- Threat Hunting
-- PowerShell Abuse
-- Vulnerability Scanning
-- DevSecOps Security Pipeline
+- CloudWatch
+- SNS
+- IAM
+- Detection Engineering
 - Security Monitoring
 - Incident Response
+- SIEM concepts
 
 ---
 
-## 📂 Estrutura do Projeto
+# Detection Rules
 
-```bash
-architecture/
-aws/
-siem/
-incident-response/
-devsecops/
-detections/
-reports/
-screenshots/
-scripts/
-```
+| Detection | Status |
+|---|---|
+| Console Login Failure | Implemented |
+| IAM User Created | Implemented |
+| Root Account Usage | Implemented |
+| Security Group Change | Implemented |
 
 ---
 
-## 🎯 Objetivos Técnicos
+# SOC Detection Flow
 
-- Simular operações reais de SOC
-- Implementar detecção de ameaças
-- Desenvolver playbooks de resposta
-- Aplicar hardening em ambientes AWS
-- Criar pipelines seguros de DevSecOps
-- Realizar investigação e análise de incidentes
+```text
+IAM Events
+    ↓
+    CloudTrail
+        ↓
+        CloudWatch
+            ↓
+            SNS Alerts
+                ↓
+                SOC Analyst
+                ```
 
----
+                ---
 
-## 🚀 Próximas Implementações
+                # Repository Structure
 
-- Integração Wazuh + AWS
-- Dashboards SIEM
-- Regras Sigma
-- Alertas automatizados
-- Threat Intelligence
-- Automação com Lambda
-- Terraform IaC
+                ```text
+                architecture/
+                aws/
+                detections/
+                devsecops/
+                incident-response/
+                reports/
+                screenshots/
+                scripts/
+                siem/
+                ```
+
+                ---
+
+                # MITRE ATT&CK Coverage
+
+                - T1110 - Brute Force
+                - T1136 - Create Account
+                - T1098 - Account Manipulation
+
+                ---
+
+                # Status
+
+                Implemented

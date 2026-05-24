@@ -31,7 +31,6 @@ Technologies used:
 | Security Group Change | ✅ |
 
 ---
-
 # SOC Detection Flow
 
 ```text

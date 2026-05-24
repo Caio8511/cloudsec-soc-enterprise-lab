@@ -75,3 +75,30 @@ IAM Events
                 # Status
 
                 Implemented
+
+                # CloudSec SOC Enterprise Lab
+
+                AWS SOC/Cloud Security laboratory focused on monitoring, detections and incident visibility using:
+
+                - AWS CloudTrail
+                - Amazon CloudWatch
+                - Amazon SNS
+                - IAM Monitoring
+                - Security Event Detection
+
+                # SOC Dashboard
+
+                ![AWS SOC Dashboard](screenshots/aws-soc-dashboard.png)
+
+                # Implemented Detections
+
+                | Detection | Status |
+                |---|---|
+                | Console Login Failure | ✅ |
+                | IAM User Created | ✅ |
+                | Root Account Usage | ✅ |
+                | Security Group Change | ✅ |
+
+                # Detection Flow
+
+                IAM Events → CloudTrail → CloudWatch → SNS → Email Alert

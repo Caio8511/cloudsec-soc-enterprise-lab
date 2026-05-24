@@ -90,3 +90,11 @@ IAM Events
                 # Status
 
                 Implemented
+
+         # SOC Dashboard
+
+         ![AWS SOC Dashboard](screenshots/aws-soc-dashboard.png)
+
+                # Architecture
+
+                ![Architecture](architecture/aws-soc-architecture.png)

@@ -21,14 +21,14 @@ Technologies used:
 
 ---
 
-# Detection Rules
+# Implemented Detections
 
 | Detection | Status |
 |---|---|
-| Console Login Failure | Implemented |
-| IAM User Created | Implemented |
-| Root Account Usage | Implemented |
-| Security Group Change | Implemented |
+| Console Login Failure | ✅ |
+| IAM User Created | ✅ |
+| Root Account Usage | ✅ |
+| Security Group Change | ✅ |
 
 ---
 
@@ -72,13 +72,7 @@ IAM Events
 
                 ---
 
-                # Status
-
-                Implemented
-
-                # CloudSec SOC Enterprise Lab
-
-                AWS SOC/Cloud Security laboratory focused on monitoring, detections and incident visibility using:
+                # AWS Services Used
 
                 - AWS CloudTrail
                 - Amazon CloudWatch
@@ -86,19 +80,14 @@ IAM Events
                 - IAM Monitoring
                 - Security Event Detection
 
+                ---
+
                 # SOC Dashboard
 
                 ![AWS SOC Dashboard](screenshots/aws-soc-dashboard.png)
 
-                # Implemented Detections
+                ---
 
-                | Detection | Status |
-                |---|---|
-                | Console Login Failure | ✅ |
-                | IAM User Created | ✅ |
-                | Root Account Usage | ✅ |
-                | Security Group Change | ✅ |
+                # Status
 
-                # Detection Flow
-
-                IAM Events → CloudTrail → CloudWatch → SNS → Email Alert
+                Implemented
